@@ -1,12 +1,15 @@
 # !/usr/bin/python
 """ 
 run_match
+Runs MATCH version 2.5 on chex
+
 Runs AP clusters through the MATCH CMD fitting program, outputs fitting results and several analysis plots
 Example Run Command: python run_match.py ap1 0 &
 1st argument:  cluster name
 2nd argument:  dav value (0 to 0.5)
+
 run from one directory up from apXXX
-Inputs: writeparam.py; output.py; writefits.py; pg.py; iso_ages_solar.dat; apXXX/apXXX_phot.fits; apXXX/apXXX.dst.fake.fits; apXXX/apXXX_sky.fits 
+Inputs: writeparam.py; output.py; write_fits.py; pg.py; iso_ages_solar.dat; apXXX/apXXX_phot.fits; apXXX/apXXX.dst.fake.fits; apXXX/apXXX_sky.fits 
 Outputs: apXXX/apXXX_cmd.png; apXXX/param.sfh; apXXX/apXXX_out.cmd; apXXX/console_apXXX.txt; apXXX/apXXX_out; apXXX/apXXX_pdf.png; apXXX/apXXX_jointpdf_av_age.png
 """
 
@@ -19,7 +22,7 @@ import pyfits
 import output
 from matplotlib import cm
 import writeparam
-import writefits
+import write_fits
 import pg
 
 
@@ -342,7 +345,7 @@ jointclusterpdfs(name, matchoutput, weights)
 pg.main(name)
 
 #write fits table
-writefits.main(name)
+write_fits.main(name)
 
 
 
