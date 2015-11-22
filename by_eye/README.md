@@ -18,3 +18,32 @@ These are from Nelson's 2011 paper.
 N:  neither Match nor integrated fits looked acceptable (only 14 clusters)
 
 X:  no Match or integrated results available (only 21 clusters, most of these were the ones Cliff manually added)
+
+
+The Flag column is the classification I gave each cluster in the by-eye check.  These values mean:
+
+B = Both integrated and Match fits look acceptable
+
+MAY = Match fit looks acceptable, integrated fit not acceptable, cluster is young (log(Match Age) <= 8.5)
+
+MAO = Match fit looks acceptable, integrated fit not acceptable, cluster is older (log(Match Age) > 8.5)
+
+IAY = Integrated fit looks acceptable, Match fit not acceptable, cluster is young
+
+IAO = Integrated fit looks acceptable, Match fit not acceptable, cluster is older
+
+NS = I'm not sure what is acceptable, either because the CMD does not have many stars or the background is very crowded, or something else weird is going on
+
+NSMB = I'm not sure if either fit is doing well, but the Match fit looks like it's doing better than the integrated fit, a lot of these are the 1 Gyr Match fits where the integrated fits don't look good
+
+NSIB = I'm not sure, but the integrated fit looks better than the Match fit
+
+N = Neither fit looks acceptable, not many of these
+
+MAMO = Only Match results available, the Match fit looks acceptable
+
+MUMO = Only Match results available, the Match fit does not look acceptable
+
+XXX = No Match results available, most of these are the clusters at the very end of the catalog, I still need to check if any of these have integrated results
+
+From these values, I chose the best method and put that in the best method column.  When Flag = B or NS, I used the 'default' method, which is Match for ages <= 8.5 and int for older.
