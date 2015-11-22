@@ -7,7 +7,17 @@ from matplotlib import cm
 
 name = sys.argv[1]
 
-'''plot cluster CMD and background CMD'''
+'''plot cluster CMD and background CMD
+
+To run in python:
+%run plot_CMD.py name
+where name is the cluster name, e.g. ap1
+
+Reads match output file name+'/console_'+name+'.txt'
+Reads iso_ages_solar.dat
+
+Output:  name/name_cmd.png
+'''
 
 
 #read in data from fits files
@@ -161,5 +171,5 @@ plotdata(phot, bg, bestage, av)
 plt.ylim(27.99, 16.)
 plt.xlim(-0.49, 4.49)
 plt.subplots_adjust(wspace=0.)
-plt.savefig(name+ '/' +name+'_cmd_test2.png', dpi=150, bbox_inches='tight')
+plt.savefig(name+ '/' +name+'_cmd.png', dpi=150, bbox_inches='tight')
 
