@@ -19,7 +19,7 @@ N:  neither Match nor integrated fits looked acceptable (only 14 clusters)
 
 X:  no Match or integrated results available (only 21 clusters, most of these were the ones Cliff manually added)
 
-
+------------------------------
 The Flag column is the classification I gave each cluster in the by-eye check.  These values mean:
 
 B = Both integrated and Match fits look acceptable
