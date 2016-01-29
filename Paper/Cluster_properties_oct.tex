@@ -61,7 +61,7 @@ The organization of this paper is as follows:  In Section~\ref{sec:sample} we de
 \begin{figure}[ht!]
    \begin{center}$
       \begin{array}{cc}
-         \includegraphics[trim=3.4cm 0.2cm 0.2cm 0.2cm, clip=True, scale=0.5]{cluster_catalog_footprint.pdf} 
+         \includegraphics[trim=3.4cm 0.2cm 0.2cm 0.2cm, clip=True, scale=0.5]{figs/cluster_catalog_footprint.pdf} 
       \end{array}$
    \end{center}
   \caption{Background GALEX NUV image of M31 \citep{Thilker05}, showing the locations of the stellar clusters (blue points) in the PHAT cluster sample. }
@@ -84,8 +84,8 @@ The depth of the photometry depends on galactic environment and crowding, which 
 
 \begin{figure*}[!htbp]
 \centering
-\mbox{\subfigure{\includegraphics[trim=5cm 5cm 5cm 5cm, clip=True, scale=0.6]{ap81_rad.pdf} 
-\includegraphics[trim=6cm 5cm 5cm 5cm, clip=True, scale=0.6]{ap71_rad.pdf}}}
+\mbox{\subfigure{\includegraphics[trim=5cm 5cm 5cm 5cm, clip=True, scale=0.6]{figs/ap81_rad.pdf} 
+\includegraphics[trim=6cm 5cm 5cm 5cm, clip=True, scale=0.6]{figs/ap71_rad.pdf}}}
 \caption{Two example HST/ACS optical images of clusters in the PHAT sample.  AP81, a typical young cluster is shown in the left panel, and AP71, an older cluster is shown on the right panel.  The green circle represents the cluster's photometric aperture, and the red circles show the annulus within which the background is taken.  The clusters are clearly resolved into stars.  However, the stellar background is complex, which complicates both interpretation of the CMD and measurement of the integrated light.}
 \label{fig:images}
 \end{figure*}
@@ -101,8 +101,8 @@ Artificial star tests (ASTs) were used to assess completeness and photometric bi
 
 \begin{figure*}[!htbp]
 \centering
-\mbox{\subfigure{\includegraphics[trim=5cm 4cm 4cm 4cm, clip=True, scale=0.6]{ap2023_compmag1.pdf} 
-\includegraphics[trim=6cm 5cm 4cm 4cm, clip=True, scale=0.6]{ap2023_compmag2.pdf}}}
+\mbox{\subfigure{\includegraphics[trim=5cm 4cm 4cm 4cm, clip=True, scale=0.6]{figs/ap2023_compmag1.pdf} 
+\includegraphics[trim=6cm 5cm 4cm 4cm, clip=True, scale=0.6]{figs/ap2023_compmag2.pdf}}}
 \caption{Spatial completeness maps for the dense stellar cluster AP2023.  The left panel shows the spatial distribution of the 50\% completeness magnitude and the right panel shows the completeness percentage at a fixed magnitude of 24.47 (corresponding to an absolute magnitude of 0).  The black circle shows the radial cut at 18 ${\rm mag/arcsec^2}$ in the F814W band which was used to remove photometry from stars within this radius that suffered from extreme crowding.  The overall completeness varies sharply with radius, changing from nearly zero completeness to \textgreater\ 80\% completeness over a change in radius of \textless\ 1".}
 \label{fig:compmap}
 \end{figure*}
@@ -139,8 +139,8 @@ This surface brightness cut affected 290 clusters.  Inclusion of this cut change
 
 \begin{figure*}[!htbp]
 \centering
-\mbox{\subfigure{\includegraphics[trim=0.6cm 0.5cm 1.5cm 1cm, clip=True, scale=0.4]{ap2023_cmdonly_orig.pdf} 
-\includegraphics[trim=0.6cm 0.5cm 1.5cm 1cm, clip=True, scale=0.4]{ap2023_cmdonly_SB.pdf}}}
+\mbox{\subfigure{\includegraphics[trim=0.6cm 0.5cm 1.5cm 1cm, clip=True, scale=0.4]{figs/ap2023_cmdonly_orig.pdf} 
+\includegraphics[trim=0.6cm 0.5cm 1.5cm 1cm, clip=True, scale=0.4]{figs/ap2023_cmdonly_SB.pdf}}}
 
 \caption{Original CMD for AP2023 (left panel) and after crowding cut using a surface brightness cutoff of 18 ${\rm mag/arcsec^2}$ (right panel).  This cut successfully eliminated bad photometry due to extreme crowding in the center of the cluster, leaving a CMD that shows a clear blue horizontal branch, characteristic of old metal poor globular clusters.}
 \label{fig:cmdonly}
@@ -189,7 +189,7 @@ We ran each cluster through MATCH in the single stellar population mode.  We con
 \begin{figure*}[!htbp]
    \begin{center}$
       \begin{array}{cc}
-         \includegraphics[trim=2.6cm 0.2cm 0.2cm 0cm, clip=True, width=7.8in]{syn_results528.pdf} 
+         \includegraphics[trim=2.6cm 0.2cm 0.2cm 0cm, clip=True, width=7.8in]{figs/syn_results528.pdf} 
       \end{array}$
    \end{center}
   \caption{Results from running 866 synthetic clusters through MATCH.  Top panels show each input parameter versus the Match recovered parameter, color-coded by input mass.  A small amount of Gaussian scatter was added for clarity to avoid overplotting points at discrete values of mass and age.  The middle panels show each input parameter versus the difference between input and recovered parameter, also color-coded by input mass.  The RMS deviation in $log_{10} (t)$ is 0.43 yr, the deviation in $log_{10} (M)$ is 0.34 $M_{\odot}$ and is 0.32 magnitudes in $A_{V}$.  Clusters above $10^3 M_{\odot}$ are recovered especially well.  The bottom panels show input and recovered histograms for each parameter.}
@@ -207,7 +207,7 @@ To illustrate that failures in one parameter cause failures in another parameter
 \begin{figure*}[!htbp]
    \begin{center}$
      \begin{array}{cc}
-        \includegraphics[trim=0cm 11cm 0cm 0cm, clip=True, width=7in]{delta1008.pdf} 
+        \includegraphics[trim=0cm 11cm 0cm 0cm, clip=True, width=7in]{figs/delta1008.pdf} 
     \end{array}$
  \end{center}
 \caption{The difference in input and recovered $log_{10} (t)$ versus the difference in input and recovered $log_{10} (M)$ for synthetic clusters (left panel).  The difference in input and recovered $log_{10} (t)$ versus the difference in input and recovered $A_{V}$ for synthetic clusters (middle panel).  The right panel shows the difference in input and recovered $log_{10} (M)$ versus the difference in input and recovered $A_{V}$.  It is clear that failures in one parameter correlate with failures in the other parameters.}
@@ -223,7 +223,7 @@ The failure cases are mostly confined to low mass, young clusters that have been
 \begin{figure}[ht!]
    \begin{center}$
      \begin{array}{cc}
-        \includegraphics[trim=3.1cm 8.2cm 3.8cm 0.2cm, clip=True, scale=0.65]{ap3219_test.pdf} 
+        \includegraphics[trim=3.1cm 8.2cm 3.8cm 0.2cm, clip=True, scale=0.65]{figs/ap3219_test.pdf} 
     \end{array}$
  \end{center}
   \caption{Color-magnitude diagram for PHAT cluster AP3219 in the left panel and the background population on the right panel.  The blue isochrone corresponds to the best fit age and extinction from CMD fitting, while the green isochrone corresponds to the expected age and extinction from integrated light fitting.}
@@ -246,7 +246,7 @@ For our integrated light fits, model clusters ranged in age from 1 Myr to 20 Gyr
 \begin{figure*}[!htbp]
    \begin{center}$
      \begin{array}{cc}
-        \includegraphics[trim=1cm 4cm 0.2cm 0.2cm, clip=True, scale=0.5]{int_uncertainties.pdf} 
+        \includegraphics[trim=1cm 4cm 0.2cm 0.2cm, clip=True, scale=0.5]{figs/int_uncertainties.pdf} 
     \end{array}$
  \end{center}
   \caption{Typical pdfs from the integrated light fitting showing the distribution of possible parameters.}
@@ -265,7 +265,7 @@ In addition, stochastic models are extremely sensitive to models of stellar evol
 \begin{figure}[ht!]
    \begin{center}$
      \begin{array}{cc}
-        \includegraphics[trim=2.9cm 8.2cm 3.8cm 0.2cm, clip=True, scale=0.65]{ap3320_test.pdf} 
+        \includegraphics[trim=2.9cm 8.2cm 3.8cm 0.2cm, clip=True, scale=0.65]{figs/ap3320_test.pdf} 
     \end{array}$
  \end{center}
   \caption{Color-magnitude diagram for PHAT cluster AP3320 in the left panel and the background population on the right panel.  The blue isochrone corresponds to the best fit age and extinction from CMD fitting, while the green isochrone corresponds to the expected age and extinction from integrated light fitting.}
@@ -292,10 +292,10 @@ We also see a clear feature at 1 Gyr for the MATCH age results as described in S
 
 \begin{figure*}[!htbp]
 \centering
-\mbox{\subfigure{\includegraphics[trim=0.7cm 0.1cm 2.5cm 0.2cm, clip=True, scale=0.45]{plot_int_match_age.pdf} 
-\includegraphics[trim=0.7cm 0.1cm 2.5cm 0.2cm, clip=True, scale=0.45]{plot_int_match_mass.pdf}}}
+\mbox{\subfigure{\includegraphics[trim=0.7cm 0.1cm 2.5cm 0.2cm, clip=True, scale=0.45]{figs/plot_int_match_age.pdf} 
+\includegraphics[trim=0.7cm 0.1cm 2.5cm 0.2cm, clip=True, scale=0.45]{figs/plot_int_match_mass.pdf}}}
 \\
-\mbox{\subfigure{\includegraphics[trim=0.7cm 0.1cm 2.5cm 0.2cm, clip=True, scale=0.45]{plot_int_match_av.pdf}}}
+\mbox{\subfigure{\includegraphics[trim=0.7cm 0.1cm 2.5cm 0.2cm, clip=True, scale=0.45]{figs/plot_int_match_av.pdf}}}
 \caption{Comparison of MATCH best fit results to integrated light expectation value.  Top left panel is age, top right is mass, bottom is $A_V$.  All plots have uncertainties in the PDFs incorporated by Monte Carlo sampling of the PDF.}
 \label{fig:int_match_comp}
 \end{figure*}
@@ -315,7 +315,7 @@ To identify clusters that may be affected by background contamination, in Figure
 \begin{figure}[ht!]
    \begin{center}$
       \begin{array}{cc}
-         \includegraphics[trim=0.1cm 0.1cm 0.1cm 0.1cm, clip=True, scale=0.45]{age_unres475.pdf} 
+         \includegraphics[trim=0.1cm 0.1cm 0.1cm 0.1cm, clip=True, scale=0.45]{figs/age_unres475.pdf} 
       \end{array}$
    \end{center}
   \caption{MATCH versus integrated $log_{10} (t)$ where the size of the points represents the amount of variation in the cluster color when the brightest stars are removed.  A small amount of Gaussian scatter was added in the $x$-direction for clarity.  Older clusters show noticeably more stable colors.}
@@ -340,7 +340,7 @@ To pick the "best" fit for each cluster, we first adopt a default as MATCH provi
 \begin{figure}[!ht]
    \begin{center}$
       \begin{array}{cc}
-         \includegraphics[trim=4cm 1cm 1cm 0.5cm, clip=True, scale=0.5]{plot_cmd_hist1.pdf} 
+         \includegraphics[trim=4cm 1cm 1cm 0.5cm, clip=True, scale=0.5]{figs/plot_cmd_hist1.pdf} 
       \end{array}$
    \end{center}
   \caption{Color magnitude diagram for all clusters, where the red points represent clusters for which neither method produced an acceptable fit (1\% of the sample), and the green points represent clusters for which the best method was not clear (10\% of the sample).}
@@ -395,7 +395,7 @@ In general the by-eye evaluation confirmed what we suspected from the plots in t
 \begin{figure}[ht!]
    \begin{center}$
       \begin{array}{cc}
-         \includegraphics[trim=3.2cm 0.8cm 0.2cm 0.2cm, clip=True, scale=0.45]{hist_flag611.pdf} 
+         \includegraphics[trim=3.2cm 0.8cm 0.2cm 0.2cm, clip=True, scale=0.45]{figs/hist_flag611.pdf} 
       \end{array}$
    \end{center}
   \caption{MATCH versus integrated $log_{10} (t)$ where flagged clusters with unacceptable fits in both methods are shown in red, and clusters where the non default fit is better are shown in green. Histograms on sides show distributions of each.  A small amount of Gaussian scatter was added in the $x$-direction for clarity.}
@@ -414,7 +414,7 @@ We can also investigate how the number of filters in which a cluster was detecte
 \begin{figure}[ht!]
    \begin{center}$
       \begin{array}{cc}
-         \includegraphics[trim=3.2cm 0.8cm 0.2cm 0.2cm, clip=True, scale=0.45]{plot_flag_ndet.pdf} 
+         \includegraphics[trim=3.2cm 0.8cm 0.2cm 0.2cm, clip=True, scale=0.45]{figs/plot_flag_ndet.pdf} 
       \end{array}$
    \end{center}
   \caption{Integrated $log_{10} (M)$ versus the number of filter detections where all flagged clusters are shown in red.  Histograms on sides show distributions of each.  A small amount of Gaussian scatter was added in the $y$-direction for clarity.}
@@ -436,7 +436,7 @@ Now that we have ages and masses assigned to each cluster, we can look at the gl
 \begin{figure}[!ht]
    \begin{center}$
       \begin{array}{cc}
-         \includegraphics[trim=3cm 1cm 1cm 0.5cm, clip=True, scale=0.5]{age_mass_comp1018.pdf} 
+         \includegraphics[trim=3cm 1cm 1cm 0.5cm, clip=True, scale=0.5]{figs/age_mass_comp1018.pdf} 
       \end{array}$
    \end{center}
   \caption{Age versus mass for the final cluster results, color-coded by extinction.  Clusters labelled 'Not sure' are excluded.  The black line shows the 50\% completeness mass in for that age (from \citep{Johnson15}).}
@@ -447,7 +447,7 @@ Now that we have ages and masses assigned to each cluster, we can look at the gl
 \begin{figure}[ht!]
    \begin{center}$
       \begin{array}{cc}
-         \includegraphics[trim=3.1cm 0.2cm 3cm 1.5cm, clip=True, scale=0.48]{cluster_catalog63.pdf} 
+         \includegraphics[trim=3.1cm 0.2cm 3cm 1.5cm, clip=True, scale=0.48]{figs/cluster_catalog63.pdf} 
       \end{array}$
    \end{center}
   \caption{PHAT cluster locations shown on the GALEX NUV image \citep{Thilker05}, where the clusters are color-coded by age.  The youngest clusters (blue) lie mostly along the 10 kpc star-forming ring.}
@@ -458,7 +458,7 @@ Now that we have ages and masses assigned to each cluster, we can look at the gl
 \begin{figure}[ht!]
    \begin{center}$
       \begin{array}{cc}
-         \includegraphics[trim=2.7cm 0.2cm 3cm 0.2cm, clip=True, scale=0.48]{cluster_catalog_mass63.pdf} 
+         \includegraphics[trim=2.7cm 0.2cm 3cm 0.2cm, clip=True, scale=0.48]{figs/cluster_catalog_mass63.pdf} 
       \end{array}$
    \end{center}
   \caption{PHAT cluster locations shown on the GALEX NUV image \citep{Thilker05}, where the clusters are color-coded by mass.  The massive clusters (red) lie mostly in the bulge, while lower mass clusters are spread throughout the disk.}
@@ -469,7 +469,7 @@ Now that we have ages and masses assigned to each cluster, we can look at the gl
 \begin{figure}[ht!]
    \begin{center}$
       \begin{array}{cc}
-         \includegraphics[trim=1.3cm 0.2cm 3cm 0.2cm, clip=True, scale=0.42]{cluster_catalog_av63.pdf} 
+         \includegraphics[trim=1.3cm 0.2cm 3cm 0.2cm, clip=True, scale=0.42]{figs/cluster_catalog_av63.pdf} 
       \end{array}$
    \end{center}
   \caption{PHAT cluster locations shown on the dust map \citep{Draine07} image, where the clusters are color-coded by extinction.  The more reddened clusters (red) are mostly coincident with dusty regions.}
@@ -484,7 +484,7 @@ In Figure~\ref{fig:age_catalog} we show the cluster locations on a background GA
 \begin{figure}[ht!]
    \begin{center}$
       \begin{array}{cc}
-         \includegraphics[trim=6.2cm 0.2cm 0.2cm 0.2cm, clip=True, scale=0.75]{all_dist.pdf} 
+         \includegraphics[trim=6.2cm 0.2cm 0.2cm 0.2cm, clip=True, scale=0.75]{figs/all_dist.pdf} 
       \end{array}$
    \end{center}
   \caption{Present day age distribution (top panel) and mass distribution (bottom panel) as a function of cluster mass for the entire cluster sample.  Orange shaded regions represent uncertainties uncertainties that arise from uncertainties in the parameter fits, and the green shaded regions represent the uncertainties from the bootstrap resampling as described in the text.}
@@ -499,7 +499,7 @@ In Figure~\ref{fig:distributions} we plot the present day age distribution (top 
 \begin{figure*}[!htbp]
    \begin{center}$
       \begin{array}{cc}
-         \includegraphics[trim=0.3cm 4.8cm 0.2cm 0.2cm, clip=True, scale=0.63]{age_dist_all.pdf} 
+         \includegraphics[trim=0.3cm 4.8cm 0.2cm 0.2cm, clip=True, scale=0.63]{figs/age_dist_all.pdf} 
       \end{array}$
    \end{center}
   \caption{Present day age distribution as a function of cluster age for several slices in cluster mass.  Orange shaded regions represent uncertainties that arise from uncertainties in the parameter fits, and the green shaded regions represent the uncertainties from bootstrap resampling.}
@@ -511,7 +511,7 @@ There are two main sources of uncertainty when calculating these distributions: 
 \begin{figure*}[!htbp]
    \begin{center}$
       \begin{array}{cc}
-         \includegraphics[trim=0.3cm 3cm 7cm 0.2cm, clip=True, scale=0.65]{mass_dist_all.pdf} 
+         \includegraphics[trim=0.3cm 3cm 7cm 0.2cm, clip=True, scale=0.65]{figs/mass_dist_all.pdf} 
       \end{array}$
    \end{center}
   \caption{Present day mass distribution as a function of cluster age for several slices in cluster age.  Orange shaded regions represent uncertainties uncertainties that arise from uncertainties in the parameter fits, and the green shaded regions represent the uncertainties from the bootstrap resampling as described in the text.}
@@ -538,7 +538,7 @@ Most extragalactic systems are too distant for us to resolve their individual st
 \begin{figure}[ht!]
    \begin{center}$
       \begin{array}{cc}
-         \includegraphics[trim=6.2cm 0.2cm 0.2cm 0.2cm, clip=True, scale=0.75]{int_dist.pdf} 
+         \includegraphics[trim=6.2cm 0.2cm 0.2cm 0.2cm, clip=True, scale=0.75]{figs/int_dist.pdf} 
       \end{array}$
    \end{center}
   \caption{Present day age distribution (top panel) and mass distribution (bottom panel) as a function of cluster mass using only the results of the integrated light fitting.  Orange shaded regions represent uncertainties that arise from uncertainties in the parameter fits, and the green shaded regions represent the uncertainties from the bootstrap resampling as described in the text.  The black dashed lines show the median of the distributions using the most reliable parameters as plotted in Figure~\ref{fig:distributions}.}
@@ -557,7 +557,7 @@ The overall mass distributions are similar to each other in the region where we 
 \begin{figure*}[!htbp]
    \begin{center}$
       \begin{array}{cc}
-         \includegraphics[trim=0.3cm 4.8cm 0.2cm 0.2cm, clip=True, scale=0.63]{age_dist_int.pdf} 
+         \includegraphics[trim=0.3cm 4.8cm 0.2cm 0.2cm, clip=True, scale=0.63]{figs/age_dist_int.pdf} 
       \end{array}$
    \end{center}
   \caption{Present day age distribution as a function of cluster age for several slices in cluster mass using the results of the integrated light fitting.  Orange shaded regions represent uncertainties that arise from uncertainties in the parameter fits, and the green shaded regions represent the uncertainties from the bootstrap resampling as described in the text.  The black dashed lines show the median of the distributions using the most reliable parameters as plotted in Figure~\ref{fig:agedist}.}
@@ -569,7 +569,7 @@ The overall mass distributions are similar to each other in the region where we 
 \begin{figure*}[!htbp]
    \begin{center}$
       \begin{array}{cc}
-         \includegraphics[trim=0.3cm 3cm 7cm 0.2cm, clip=True, scale=0.65]{mass_dist_int.pdf} 
+         \includegraphics[trim=0.3cm 3cm 7cm 0.2cm, clip=True, scale=0.65]{figs/mass_dist_int.pdf} 
       \end{array}$
    \end{center}
   \caption{Present day mass distribution as a function of cluster mass for several slices in cluster age using the results of the integrated light fitting.  Orange shaded regions represent uncertainties that arise from uncertainties in the parameter fits, and the green shaded regions represent the uncertainties from the bootstrap resampling as described in the text.  The black dashed lines show the median of the distributions using the most reliable parameters as plotted in Figure~\ref{fig:massdist}.}
@@ -583,7 +583,7 @@ In Figure~\ref{fig:intdiff} we show the difference in density between our fiduci
 \begin{figure}[ht!]
    \begin{center}$
       \begin{array}{cc}
-         \includegraphics[trim=1.5cm 0cm 1cm 3cm, clip=True, scale=0.4]{int_diff62.pdf} 
+         \includegraphics[trim=1.5cm 0cm 1cm 3cm, clip=True, scale=0.4]{figs/int_diff62.pdf} 
       \end{array}$
    \end{center}
   \caption{Difference (optimal - integrated) in the number density between our fiducial results for the cluster sample and the integrated light results in the age-mass parameter space, where red is where there are more of the fiducial clusters in that bin and blue is where there are more integrated clusters in that bin.}
