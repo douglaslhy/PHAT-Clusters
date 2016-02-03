@@ -394,7 +394,7 @@ ybin_width = 1.
 xlabel = 'Integrated log(M [$M_{\odot}$])'
 ylabel = 'Number of Filter Detections'
 
-flag_place = plot_scatter_hist(xdata, ydata, xbin_min, xbin_max, ybin_min, ybin_max, xbin_width, ybin_width, xlabel, ylabel, outfile='plot_flag_ndet_new.png', noise=1)
+flag_place = plot_scatter_hist(xdata, ydata, xbin_min, xbin_max, ybin_min, ybin_max, xbin_width, ybin_width, xlabel, ylabel, outfile='plot_flag_ndet.png', noise=1)
 
 
 
