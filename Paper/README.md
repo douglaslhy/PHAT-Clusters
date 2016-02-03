@@ -33,7 +33,7 @@ plot_int_match_av.pdf:  macbook Research/agecomp/distribution_plots/plot_int_mat
 age_unres475.pdf:  macbook Research/agecomp/by_eye/plot_flag_hist512.py
 -> plot_match_int_age_unres.py 
 
-fig 12:  plot_cmd_hist1.pdf:  plot_cmd_hist.py **need to add
+fig 12:  plot_cmd_hist1.pdf:  plot_cmd_hist.py
 
 fig 13 and 14:  plot_flag_hist_new.py in macbook Research/agecomp/by_eye:  makes flag_hist_new.png, plot_flag_ndet_new.png
 
