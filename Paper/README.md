@@ -35,7 +35,7 @@ age_unres475.pdf:  macbook Research/agecomp/by_eye/plot_flag_hist512.py
 
 fig 12:  plot_cmd_hist1.pdf:  plot_cmd_hist.py
 
-fig 13 and 14:  plot_flag_hist_new.py in macbook Research/agecomp/by_eye:  makes flag_hist_new.png, plot_flag_ndet_new.png
+fig 13 and 14:  plot_flag_hist_new.py in macbook Research/agecomp/by_eye:  makes hist_flag611.png, plot_flag_ndet_new.png
 
 fig 15:  age_mass_comp1018:  macbook Research/agecomp/plot_age_mass709.py
 

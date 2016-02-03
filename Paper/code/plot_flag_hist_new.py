@@ -374,7 +374,7 @@ ybin_width = 0.2
 xlabel = 'MATCH log(t [yr])'
 ylabel = 'Integrated log(t [yr])'
 
-flag_place = plot_scatter_hist(xdata, ydata, xbin_min, xbin_max, ybin_min, ybin_max, xbin_width, ybin_width, xlabel, ylabel, outfile='hist_flag_new.png', noise=1)
+flag_place = plot_scatter_hist(xdata, ydata, xbin_min, xbin_max, ybin_min, ybin_max, xbin_width, ybin_width, xlabel, ylabel, outfile='hist_flag611.png', noise=1)
 
 
 
